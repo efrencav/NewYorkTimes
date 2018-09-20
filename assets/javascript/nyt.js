@@ -1,9 +1,9 @@
-var q = 
-var begin_date = 
-var end_date = 
-var numberRecords = 
+var q = $('#searchTerm').val();
+var begin_date = $('#startYear').val();
+var end_date = $('#endYear').val();
+var numberRecords = $('#numberofRecords').val();
 
-$(document).on('click','#searchButton', function() {
+$(document).on('click','#searchBtn', function() {
 
     var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
     url += '?' + $.param({
@@ -33,3 +33,9 @@ $(document).on('click','#searchButton', function() {
     throw err;
     });
 });
+$(document).on('click', '#clearBtn',function () {
+    $('#searchTerm').val('');
+    $('#startYear').val('');
+    $('#endYear').val('');
+    $('#numberofRecords').val('');
+})
