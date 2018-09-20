@@ -17,3 +17,7 @@ footer {
     text-align: center;
     font-weight: bold;
 }
+
+label {
+    font-weight: bold;
+}
