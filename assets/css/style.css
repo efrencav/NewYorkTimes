@@ -1,5 +1,5 @@
 .jumbotron {
-    background: navy;
+    background: rgb(29, 29, 75);
     font-weight: bold;
     color: beige;
     text-align: center;
@@ -23,5 +23,5 @@ label {
 }
 
 body {
-    background: rgb(236, 217, 164);
+    background: beige;
 }
